@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Dz Lesson_7</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1 class="main-1">
+					Повторяем свойство background
+				</h1>
+			</header>
+			<main>
+				<div class="text-1">
+					<p>
+						background-color(цвет фона) устанавливает цвет фона для элемента.
+						Нажал на картинку цвета можно регулировать оттенок, перейти на rgba и последняя цифра там это прозрачность.
+					</p>
+				</div>
+				<div class="text-2">
+					<p>
+						background-image устанавливает на фон картинку
+						пишется
+						background-image: url("../img/kartinka.png");
+						Картинка не задаёт размер элементу, если она очень большая, то мы видим кусочек картинки на фоне.
+						Если очень маленькая, то она дублируется пока не заполнит элемент.
+					</p>
+				</div>
+				<div class="text-3">
+					<p>
+						Через background-image можно задавать градиент(да, через картинку, а не цвет)
+						Выглядит это так background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,107,9,1) 53%, rgba(0,212,255,1) 100%);
+
+					</p>
+				</div>
+				<div class="text-4">
+					<p>
+						Управление повторением изображения
+						background-repeat
+						Картинка повторяется бесконечное кол-во раз, пока не заполнит фон элемента. Мы можем управлять повторением.
+						по умолчанию стоит repeat, повторяется
+					</p>
+				</div>
+				<div class="text-5">
+					<p>
+						no-repeat - картинка не будет повторятся( в комбинации с цветом фона видим цвет, т.к картинка всего одна и место есть)
+					</p>
+				</div>
+				<div class="text-6">
+					<p>
+						repeat-x - повторение только по горизонтали
+					</p>
+				</div>
+				<div class="text-7">
+					<p>
+						repeat-y повторение по вертикали
+					</p>
+				</div>
+				<div class="text-8">
+					<p> x и y нужны для создания паттерна. Чтобы склеивать маленькие картинки и при этом получить одну большую. Чтобы не вставлять огромную картинку , которая много весит. Получается бесшовная картинка.</p>
+				</div>
+				<div class="text-9">
+					<p>
+						Ещё редко используется space(заполняет блок оставляя пробелы)
+					</p>
+				</div>
+				<div class="text-10">
+					<p>и round(плющит изображение, чтобы занять всю площадь)</p>
+				</div>
+				<div class="text-11">
+					<p>
+						background position (позиция изображения)
+						background position: left top(по умолчанию) сверху слева
+						Словесно могут быть 3 значения: left-top, bottom-right, center.
+						Если мы пишем одно любое значение, то второе будет по умолчанию center. Например пишем right, и картинка по центру справа.
+
+					</p>
+				</div>
+				<div class="text-12">
+					<p>
+						Если указывать в процентах, 50% это центр.
+						Если указываем 2 цифры в процентах, то первая будет процент от ширины, а вторая от высоты.
+						например 10%(от шир) 20%(от высоты).Если уменьшать блок, то картинка тоже будет двигаться сохраняя нужный процент. также значение может быть отрицательное, тогда картинка съедет за пределы.
+
+					</p>
+				</div>
+				<div class="text-13">
+					<p>
+						Можно указывать в пикселях например 10px(по ширине) 20px(по высоте) , тогда будет жёстко эти значения при любом размере блока
+
+
+					</p>
+				</div>
+				<div class="text-14">
+					<p>
+						Background-size (размер изображения)
+						По умолчанию background-size: auto(ширина) auto(высота);
+						Может указывать свои значения, например в пикселях
+						background-size: 200px auto, когда мы указали ширину 200пикс, то высота к нему подстраивается автоматом. Если указать высоту тоже в цифрах как и ширину, то картинку сплющит. Если просто написать первые цифру 200пикс ширины, то можно больше ничего не писать, высота также подстроиться автоматом. Но если мы хотим указать конкретную высоту, то перед ним должна быть или авто ширина, или конкретная ширина auto(ширина) 100px(высота) - теперь высота конкретная 100пикс, а ширина к нему авто.(ширина подстраивается под высоту). Если указано всего одно число, то оно будет шириной, а высота (не дописывется) будет auto. Если мы просто вставили картинку и не указали своих значений, то она будет того размера, какой мы её загрузили
+						В процентах background-size: 50% - ширина от ширины блока
+						background-size: auto ширина 50% - высота от высоты блока
+
+					</p>
+				</div>
+				<div class="text-15">
+					<p>
+						contain - растягивается наименьшему размеру блока(высота или ширина). Т е если у нас маленькая высота и большая ширина, то он будет во всю высоту. Если у нас большая высота и маленькая ширина, то он будет во всю ширину
+					</p>
+				</div>
+				<div class="text-16">
+					<p>
+						cover - масштабирует изображение таким образом, чтобы оно всегда закрывало весь блок.
+					</p>
+				</div>
+				<div class="text-17">
+					<p>
+						в связке с background-position: center получается лучшая связка
+						background-size:cover;
+						background-position:center
+						Получается, что картинка стремиться занимать всю ширину блока и находится при этом в центре.
+						Отлично решает проблему адаптива для других устройств.
+
+					</p>
+				</div>
+				<div class="text-18">
+					<p>
+						background-attachment(фиксация изображения)
+						Два свойства
+						<span class="scroll"> scroll - картинка скролиться вместе с блоком, всё как всегда</span>
+						<span class="fixed">fixed - картинка стоит на месте , пока мы видим сам блок. Блок скролиться, а она стоит</span>
+
+					</p>
+				</div>
+				<div class="text-19">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error perspiciatis illum beatae itaque quisquam nam dolorem quae iste. Suscipit molestiae pariatur quidem minima dicta vero dolores explicabo placeat ex.
+					</p>
+				</div>
+				<div class="text-20">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error perspiciatis illum beatae itaque quisquam nam dolorem quae iste. Suscipit molestiae pariatur quidem minima dicta vero dolores explicabo placeat ex.
+					</p>
+				</div>
+
+
+				<div class="text-21">
+					<p>
+						Универсальное свойство backround , в котором мы полностью можем настраивать фон и не писать отдельное свойство
+					</p>
+				</div>
+				<ul class="list">
+					<li class="item-list">
+						я пункт
+					</li>
+					<li class="item-list">
+						я пункт
+					</li>
+					<li class="item-list">
+						я длинный пункт я длинный пункт я длинный пункт я длинный пункт я длинный пункт я длинный пункт я длинный пункт я длинный пункт я длинный пункт я длинный пункт я длинный пункт я длинный пункт
+					</li>
+					<li class="item-list">
+						я пункт
+						<ul class="sublist">
+							<li class="sub-item-list">
+								Я подпункт
+							</li>
+							<li class="sub-item-list">
+								Я подпункт
+							</li>
+							<li class="sub-item-list">
+
+							</li>
+							<li class="sub-item-list">
+								Я подпункт
+							</li>
+							<li class="sub-item-list">
+								Я подпункт
+							</li>
+						</ul>
+					</li>
+					<li class="item-list">
+						я пункт
+					</li>
+				</ul>
+
+
+			</main>
+			<footer>
+				<div class="foote">
+					<p>Я подвал</p>
+				</div>
+
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,283 @@
+@import "null.css";
+
+@font-face {
+	font-family: "MuseoSansCyrl";
+	src: url("../fonts/MuseoSansCyrl-100Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-100Italic.woff") format("woff");
+	font-style: italic;
+	font-weight: 100;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "MuseoSansCyrl";
+	src: url("../fonts/MuseoSansCyrl-500.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-500.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "MuseoSansCyrl";
+	src: url("../fonts/MuseoSansCyrl-700Italic.woff2") format("woff2"), url("../fonts/MuseoSansCyrl-700Italic.woff") format("woff");
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+}
+
+body {
+	font-family: "MuseoSansCyrl", "sans-serif";
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: gray;
+}
+
+.main-1 {
+	font-weight: 700;
+	font-style: italic;
+	color: red;
+	text-align: center;
+	background: linear-gradient(0deg, rgba(0, 36, 28, 0.20211834733893552) 0%, rgba(0, 255, 222, 0.6530987394957983) 100%);
+	min-height: 100px;
+	padding-top: 50px;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.text-1 {
+	margin-bottom: 30px;
+	font-weight: 100;
+	font-style: italic;
+	background-color: hsla(146, 65%, 51%, 0.6);
+	color: blueviolet;
+}
+
+.text-2 {
+	background-image: url("../img/1618501713_4-p-fon-tetrad-v-kletochku-4.jpg");
+	color: blue;
+	padding: 10px;
+	margin: 0 0 30px 0;
+}
+
+.text-3 {
+	background: linear-gradient(180deg, rgba(14, 36, 0, 0.5102415966386555) 0%, rgba(255, 231, 0, 0.7511379551820728) 100%);
+	color: white;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.text-4 {
+	background: url("../img/cat4.png") 0 0 repeat;
+	min-height: 100px;
+	color: blue;
+	font-size: 25px;
+	margin-bottom: 30px;
+}
+
+.text-5 {
+	font-size: 22px;
+	color: white;
+	background: green url("../img/cat4.png") left top no-repeat;
+	min-height: 100px;
+	padding-left: 80px;
+	margin-bottom: 40px;
+}
+
+.text-6 {
+	background: crimson url("../img/cat4.png") 0 0 repeat-x;
+	font-size: 25px;
+	font-weight: 700;
+	font-style: italic;
+	min-height: 200px;
+	padding-top: 100px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.text-7 {
+	background: blueviolet url("../img/cat4.png") 0 0 repeat-y;
+	min-height: 200px;
+	font-size: 30px;
+	color: green;
+	text-align: right;
+	font-weight: 700;
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
+.text-8 {
+	background: url("../img/b96806b54da750264ce6585d678ac700.jpg") 0 0 / 30px repeat;
+	font-size: 30px;
+	color: white;
+	margin-bottom: 40px;
+}
+
+.text-9 {
+	background: purple url("../img/cat4.png") 0 0 space;
+	min-height: 200px;
+	font-size: 25px;
+	color: blue;
+	padding-top: 90px;
+	margin-bottom: 50px;
+}
+
+.text-10 {
+	background: red url("../img/cat4.png") 0 0 round;
+	min-height: 60px;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 25px;
+	/* color: green; */
+	margin-bottom: 50px;
+}
+
+.text-11 {
+	color: purple;
+	padding: 30px;
+	background: green url("../img/Efs6oPwXsAApeak.jpg") right / 100px no-repeat;
+	font-weight: 100;
+	font-style: italic;
+	margin-bottom: 50px;
+}
+
+.text-12 {
+	color: red;
+	/* padding-left: 50px; */
+	background: skyblue url("../img/569be3ec0584f15250f251f7.png") 30% 40% / 80px no-repeat;
+	text-align: right;
+	margin-bottom: 60px;
+}
+
+.text-13 {
+	color: white;
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+	min-height: 100px;
+	background: black url("../img/little logo.png") 70px 30px / 80px no-repeat;
+	margin-bottom: 60px;
+}
+
+.text-14 {
+	color: blue;
+	font-size: 26px;
+	font-weight: 100;
+	font-style: italic;
+	padding: 30px;
+	background: white url("../img/cc7ad3d3ba4e80853304bee2dc3015da.png") center / 200px 200px no-repeat;
+	margin-bottom: 50px;
+}
+
+.text-15 {
+	background: crimson url("../img/1618501713_4-p-fon-tetrad-v-kletochku-4.jpg") center / contain no-repeat;
+	margin-bottom: 50px;
+	color: green;
+}
+
+.text-16 {
+	background: url("../img/Efs6oPwXsAApeak.jpg") 0 0 / cover no-repeat;
+	min-height: 200px;
+	color: red;
+	padding-top: 50px;
+	margin-bottom: 60px;
+}
+
+.text-17 {
+	color: purple;
+	font-size: 25px;
+	font-weight: 700;
+	font-style: italic;
+	background: url("../img/Efs6oPwXsAApeak.jpg") center / cover no-repeat;
+	min-height: 300px;
+	margin-bottom: 70px;
+}
+
+.text-18 {
+	background: url("../img/1618501713_4-p-fon-tetrad-v-kletochku-4.jpg") 0 0 no-repeat;
+	font-weight: 700;
+	font-style: italic;
+	color: crimson;
+	margin-bottom: 60px;
+}
+
+.scroll {
+	font-size: 20px;
+	color: green;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.fixed {
+	font-size: 20px;
+	color: blue;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.text-19 {
+	font-size: 25px;
+	font-weight: 100;
+	font-style: italic;
+	color: purple;
+	background: skyblue url("../img/cat4.png") center / 100px no-repeat fixed;
+	min-height: 150px;
+	padding: 40px;
+	margin-bottom: 50px;
+}
+
+.text-20 {
+	font-size: 25px;
+	font-weight: 100;
+	font-style: italic;
+	color: crimson;
+	background: skyblue url("../img/cat4.png") 20% 30%/ 100px no-repeat scroll;
+	min-height: 150px;
+	padding: 40px;
+	margin-bottom: 60px;
+}
+
+.text-21 {
+	background: linear-gradient(3deg, rgba(36, 0, 10, 0.5634628851540616) 0%, rgba(255, 0, 129, 0.4962359943977591) 100%), url("../img/cat4.png") center no-repeat, url("../img/1618501713_4-p-fon-tetrad-v-kletochku-4.jpg") 0 0 no-repeat;
+	min-height: 250px;
+	padding-top: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.list {
+	background: skyblue;
+	margin-bottom: 50px;
+}
+
+.item-list {
+	background: url("../img//569be3ec0584f15250f251f7.png") 0 2px / 30px no-repeat;
+	padding-left: 35px;
+	min-height: 30px;
+	margin-bottom: 8px;
+	/* text-indent: 30px; */
+}
+
+.sub-list {
+	margin: 0 15px;
+}
+
+.sub-item-list {
+	margin-bottom: 10px;
+	background: url("../img/cat4.png") 0 0 / 20px no-repeat;
+	/* padding-left: 25px; */
+	min-height: 20px;
+	text-indent: 25px;
+}
+
+.foote {
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
